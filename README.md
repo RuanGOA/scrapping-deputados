@@ -26,4 +26,12 @@ Para isso, execute o seguinte comando:
 scrapy crawl deputados
 ```
 
-O comando anterior criará diversos arquivos no diretório `./data/deputados`. Cada arquivo representa os dados extraídos de um certo deputado. Além disso, criará também, um arquivo nomeado `deputados.csv`, no diretório `./data/`, que reune todos os dados extraídos de cada um dos deputados.
+O comando anterior criará diversos arquivos no diretório `./data/deputados`. Cada arquivo representa os dados extraídos de um certo deputado. 
+
+Por fim, se for desejado unificar todos os arquivos em um arquivo só, ainda na raiz do diretório, execute o comando:
+
+```
+python3 src/utils/unify.py
+```
+
+Um arquivo nomeado `deputados.csv` será criado no diretório `data/`, reunindo todos os dados de todos os deputados que foram extraídos.
